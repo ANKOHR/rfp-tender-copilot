@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+rfp-prompt.txt
+rfp-launch.py
+rfp-codex.log
+*.log
+workspace/
