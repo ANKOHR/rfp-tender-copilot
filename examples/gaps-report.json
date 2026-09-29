@@ -1,0 +1,135 @@
+{
+  "banner": "HONESTY BOUNDARY: Matches are heuristic keyword/category rules, not semantic understanding. Fixtures are synthetic. This tool assists drafting, does not verify truth, and does not guarantee tender success.",
+  "coverage": {
+    "answered": 3,
+    "gaps": 3,
+    "total": 6
+  },
+  "draft": "HONESTY BOUNDARY: Matches are heuristic keyword/category rules, not semantic understanding. Fixtures are synthetic. This tool assists drafting, does not verify truth, and does not guarantee tender success.\n\n# Draft response workspace\n\n## 1. Describe delivery and implementation.\n\nSYNTHETIC: Fictional Example Workshop provides delivery and implementation support. [delivery@v1; source: synthetic-record:delivery]\n\n## 2. Describe security certification.\n\nSYNTHETIC: Fictional Example Workshop holds the fictional Sample Security certification. [security@v1; source: synthetic-record:security]\n\n## 3. Describe project experience.\n\nSYNTHETIC: Fictional Example Workshop completed the fictional Sample project as evidence of experience. [experience@v1; source: synthetic-record:experience]\n\n## 4. Describe security accreditation.\n\nUNANSWERED: add KB entry. Evidence is insufficient.\n\n## 5. Provide orbital launch services.\n\nUNANSWERED: mark out of scope. Evidence is insufficient.\n\n## 6. Explain the unspecified special arrangement.\n\nUNANSWERED: request clarification. Evidence is insufficient.\n\n",
+  "gaps": [
+    {
+      "number": "4",
+      "suggested_action": "add KB entry",
+      "text": "Describe security accreditation."
+    },
+    {
+      "number": "5",
+      "suggested_action": "mark out of scope",
+      "text": "Provide orbital launch services."
+    },
+    {
+      "number": "6",
+      "suggested_action": "request clarification",
+      "text": "Explain the unspecified special arrangement."
+    }
+  ],
+  "mapping": [
+    {
+      "candidates": [
+        {
+          "band": "strong",
+          "citation": "delivery@v1",
+          "date_eligible": true,
+          "overlap": [
+            "delivery",
+            "implementation"
+          ],
+          "rules": [
+            "delivery"
+          ],
+          "source_reference": "synthetic-record:delivery",
+          "statement": "SYNTHETIC: Fictional Example Workshop provides delivery and implementation support."
+        }
+      ],
+      "gap": false,
+      "number": "1",
+      "section": "Delivery",
+      "suggested_action": null,
+      "text": "Describe delivery and implementation."
+    },
+    {
+      "candidates": [
+        {
+          "band": "strong",
+          "citation": "security@v1",
+          "date_eligible": true,
+          "overlap": [
+            "certification",
+            "security"
+          ],
+          "rules": [
+            "security"
+          ],
+          "source_reference": "synthetic-record:security",
+          "statement": "SYNTHETIC: Fictional Example Workshop holds the fictional Sample Security certification."
+        }
+      ],
+      "gap": false,
+      "number": "2",
+      "section": "Assurance",
+      "suggested_action": null,
+      "text": "Describe security certification."
+    },
+    {
+      "candidates": [
+        {
+          "band": "strong",
+          "citation": "experience@v1",
+          "date_eligible": true,
+          "overlap": [
+            "experience",
+            "project"
+          ],
+          "rules": [
+            "experience"
+          ],
+          "source_reference": "synthetic-record:experience",
+          "statement": "SYNTHETIC: Fictional Example Workshop completed the fictional Sample project as evidence of experience."
+        }
+      ],
+      "gap": false,
+      "number": "3",
+      "section": "Track record",
+      "suggested_action": null,
+      "text": "Describe project experience."
+    },
+    {
+      "candidates": [
+        {
+          "band": "partial",
+          "citation": "security@v1",
+          "date_eligible": true,
+          "overlap": [
+            "security"
+          ],
+          "rules": [
+            "security"
+          ],
+          "source_reference": "synthetic-record:security",
+          "statement": "SYNTHETIC: Fictional Example Workshop holds the fictional Sample Security certification."
+        }
+      ],
+      "gap": true,
+      "number": "4",
+      "section": "Additional requirements",
+      "suggested_action": "add KB entry",
+      "text": "Describe security accreditation."
+    },
+    {
+      "candidates": [],
+      "gap": true,
+      "number": "5",
+      "section": "Additional requirements",
+      "suggested_action": "mark out of scope",
+      "text": "Provide orbital launch services."
+    },
+    {
+      "candidates": [],
+      "gap": true,
+      "number": "6",
+      "section": "Additional requirements",
+      "suggested_action": "request clarification",
+      "text": "Explain the unspecified special arrangement."
+    }
+  ]
+}

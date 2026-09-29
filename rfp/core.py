@@ -105,6 +105,8 @@ class KnowledgeBase:
 
 
 def ingest(text):
+    if chr(8212) in text:
+        raise TenderError("em dash is prohibited")
     section = "General"
     requirements = []
     seen = set()
@@ -151,7 +153,7 @@ def map_requirements(requirements, entries, as_of):
             valid = entry["date_verified"] <= as_of <= entry["expiry"]
             band = "strong" if compatible and len(overlap) >= 2 and valid else "partial" if compatible and valid else "weak"
             candidates.append({"citation": entry["id"] + "@v" + str(entry["version"]), "statement": entry["statement"], "source_reference": entry["source_reference"], "band": band, "rules": [r["id"] for r in compatible] or ["keyword-overlap"], "overlap": overlap, "date_eligible": valid})
-        candidates.sort(key=lambda c: ({"strong": 0, "partial": 1, "weak": 2}[c["band"] , -len(c["overlap"]), c["citation"]))
+        candidates.sort(key=lambda c: ({"strong": 0, "partial": 1, "weak": 2}[c["band"]], -len(c["overlap"]), c["citation"]))
         strong = any(c["band"] == "strong" for c in candidates)
         action = None if strong else "mark out of scope" if any(r["scope"] == "out_of_scope" for r in fired) else "add KB entry" if fired else "request clarification"
         result.append({**req, "candidates": candidates, "gap": not strong, "suggested_action": action})

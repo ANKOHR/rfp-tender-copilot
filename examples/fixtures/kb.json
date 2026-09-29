@@ -1,0 +1,41 @@
+[
+  {
+    "category": "capabilities",
+    "date_verified": "2026-09-29",
+    "expiry": "2027-09-29",
+    "id": "delivery",
+    "keywords": [
+      "delivery",
+      "implementation"
+    ],
+    "source_reference": "synthetic-record:delivery",
+    "statement": "SYNTHETIC: Fictional Example Workshop provides delivery and implementation support.",
+    "version": 1
+  },
+  {
+    "category": "certifications",
+    "date_verified": "2026-09-29",
+    "expiry": "2027-09-29",
+    "id": "security",
+    "keywords": [
+      "security",
+      "certification"
+    ],
+    "source_reference": "synthetic-record:security",
+    "statement": "SYNTHETIC: Fictional Example Workshop holds the fictional Sample Security certification.",
+    "version": 1
+  },
+  {
+    "category": "past_projects",
+    "date_verified": "2026-09-29",
+    "expiry": "2027-09-29",
+    "id": "experience",
+    "keywords": [
+      "project",
+      "experience"
+    ],
+    "source_reference": "synthetic-record:experience",
+    "statement": "SYNTHETIC: Fictional Example Workshop completed the fictional Sample project as evidence of experience.",
+    "version": 1
+  }
+]
